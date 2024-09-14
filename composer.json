@@ -1,0 +1,16 @@
+{
+    "name": "allan-barnasc/piclo-framework",
+    "description": "A simple PHP Framework for simple projects",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Structure\\": "structure/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Allan Nascimento"
+        }
+    ],
+    "require": {}
+}

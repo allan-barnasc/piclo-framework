@@ -4,8 +4,6 @@ use Structure\Classes\Router;
 
 $router = new Router();
 
-$router->get('/', function () {
-    echo phpinfo();
-});
+$router->get('/', 'HomeController@index');
 
-$router->dispatch();
+$router->load();

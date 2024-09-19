@@ -2,7 +2,7 @@
 
 namespace Structure\Classes;
 
-class View
+class Piclate
 {
     private array $data;
     private string $document;
@@ -33,7 +33,7 @@ class View
     public function __construct(string $path, array $data = [])
     {
         $this->data = $data;
-        $this->document = file_get_contents("{$_SERVER['DOCUMENT_ROOT']}/views/{$path}.php");
+        $this->document = file_get_contents("../views/{$path}.piclate.php");
     }
 
     /**
@@ -74,7 +74,7 @@ class View
         if (!$template_dir)
             return null;
 
-        return file_get_contents("{$_SERVER['DOCUMENT_ROOT']}/views/{$template_dir}.php");
+        return file_get_contents("../views/{$template_dir}.piclate.php");
     }
 
     /**

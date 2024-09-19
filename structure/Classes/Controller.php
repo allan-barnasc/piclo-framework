@@ -14,7 +14,7 @@ class Controller
      */
     protected function view(string $path, array $data = []): void
     {
-        $view = new View($path, $data);
+        $view = new Piclate($path, $data);
 
         $view->mount();
     }
